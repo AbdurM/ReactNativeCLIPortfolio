@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1075891001302",
+    "project_id": "masterreactnative",
+    "storage_bucket": "masterreactnative.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075891001302:android:7d6059a5d3cf885211b677",
+        "android_client_info": {
+          "package_name": "com.reactnativecliportfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgGwzj7tNoPPXmdZjJIaiyjc6qxNDgwA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
