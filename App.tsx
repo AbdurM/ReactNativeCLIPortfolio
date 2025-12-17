@@ -10,7 +10,7 @@ import messaging from '@react-native-firebase/messaging';
 import { useEffect } from 'react';
 import { PermissionsAndroid } from 'react-native';
 import notifee from '@notifee/react-native';
-
+import analytics from '@react-native-firebase/analytics';
 function App() {
   const requestUserPermission = async () => {
     let enabled = false;
@@ -62,6 +62,12 @@ function App() {
   }, []);
 
   async function getFCMToken() {
+    await analytics().logEvent('basket', {
+      id: 3745092,
+      item: 'mens grey t-shirt',
+      description: 'round neck',
+      size: 'L',
+    });
     await messaging().registerDeviceForRemoteMessages();
     const token = await messaging().getToken();
     console.log('FCM Token:', token);
